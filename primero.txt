@@ -2,7 +2,12 @@
 este es mi primer paso en git 
 
 
+<<<<<<< Updated upstream
 1) soy lol1 y este es mi porotito!!!!!
+=======
+
+oloool!!!
+>>>>>>> Stashed changes
 
 
 
