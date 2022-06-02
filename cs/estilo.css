@@ -1,0 +1,30 @@
+*{
+    color:darkorchid;
+}
+h2{ color: darkgoldenrod;}
+.fondoVerde{
+    background-color: black;
+    color: aliceblue;
+}
+#idPrimero{
+    background-color: darkseagreen;
+    color: forestgreen;
+    font-size: 39px;
+}
+.fuenteGrande{
+    font-size: 26px;
+}
+#idSegundo{
+    background-color: rgb(58, 58, 58);
+    color: rgb(223, 82, 0);
+    font-size: 29px;
+}
+.centrar {
+    text-align: center;
+}
+@media screen and (max-width: 500px){
+    h2{color: teal ;}
+    .fuenteGrande {
+        font-size:  10px;
+    }
+}
