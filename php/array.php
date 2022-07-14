@@ -59,20 +59,38 @@ if($arrayColoresDos['Negro'] == "#000000"){
 
 //-----------------------------------------------------
 
-$arrayDesordenado = array(5,7,3,9);
-$numeroMenor = 0;
-print_r($arrayDesordenado);
 
-$totalArray = count ($arrayDesordenado);
+echo ("<br>");
 
-for($i=0; $i<$totalArray; $i++){
+$strText = "soy txt" ;
+$arrayTxt = str_split($strText);
+$arrayTxtinv = array();
+$arrayTxtFin = array();
+$i = 0;
+print_r($strText);
+print_r($arrayTxt);
 
-    print_r("<br>".$arrayDesordenado[$i]);
-    if($arrayDesordenado[$i]< $numeroMenor || $numeroMenor == 0){
-        $numeroMenor = $arrayDesordenado[$i];
+foreach($arrayTxt as $letra){
+
+    $final = count($arrayTxt) - $i;
+    $arrayTxtinv [$final] = $letra;
+    $i++ ;
+}
+echo ("<br>");
+print_r($arrayTxtinv);
+
+for($k = 0; $k <= count($arrayTxtinv); $k++){
+    $final = count($arrayTxtinv) - $k;
+    $final = $k ;
+    if(isset($arrayTxtinv[$final])){
+    $arrayTxtFin[$k] = $arrayTxtinv[$final];
     }
 }
+echo ("<br>");
+print_r($arrayTxtFin);
+$TxtFin = implode(" ",$arrayTxtFin);
+echo ("<br>");
+print_r($TxtFin);
 
 
-print_r("<br>".$arrayDesordenado[$i]);
 ?>
